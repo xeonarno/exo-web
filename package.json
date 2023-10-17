@@ -1,0 +1,32 @@
+{
+  "name": "@iim/exo-web",
+  "version": "1.0.0",
+  "description": "Basic example for a web app",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "typescript": "tsc"
+  },
+  "keywords": [],
+  "author": "xeonarno",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  },
+  "files": [
+    "dist"
+  ],
+  "types": "./dist/index.d.ts",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xeonarno/exo-web.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xeonarno/exo-web/issues"
+  },
+  "homepage": "https://github.com/xeonarno/exo-web#readme"
+}
