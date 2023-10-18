@@ -43,6 +43,7 @@ jobs:
             - name: Versionning
               run: npx changeset version
             - name: Publish
-              run: npx changeset publish --access public
+              run: npx changeset publish --access public --otp=${{ secrets.NPM_TOKEN }}
               env:
                   NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+                  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
