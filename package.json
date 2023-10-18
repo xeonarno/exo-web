@@ -1,5 +1,5 @@
 {
-  "name": "@xeonarno/exo-web",
+  "name": "exo-web-iim",
   "version": "1.0.0",
   "description": "Basic example for a web app",
   "main": "dist/index.js",
