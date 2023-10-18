@@ -49,3 +49,10 @@ jobs:
                 access: public
             - if: ${{ steps.publish.outputs.type }}
               run: echo "Version changed!"
+            - name: Save version
+              run: |
+                git config user.name github-actions
+                git config user.email github-actions@github.com
+                git add .
+                git commit -m "generated"
+                git push
