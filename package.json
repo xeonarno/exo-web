@@ -3,20 +3,28 @@
   "version": "1.0.0",
   "description": "Basic example for a web app",
   "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsup src/index.ts --format cjs,esm --dts --minify --clean --out-dir dist"
+    "dev": "vitest --watch",
+    "test": "vitest run",
+    "build": "tsup src/index.ts --format cjs,esm --dts --minify --clean --out-dir dist",
+    "lint": "eslint src/**/*.ts"
   },
   "keywords": [],
   "author": "xeonarno",
   "license": "ISC",
   "devDependencies": {
-    "typescript": "^5.2.2"
+    "@changesets/cli": "^2.26.2",
+    "@typescript-eslint/eslint-plugin": "^6.8.0",
+    "@typescript-eslint/parser": "^6.8.0",
+    "eslint": "^8.51.0",
+    "typescript": "^5.2.2",
+    "vitest": "^0.34.6"
   },
   "files": [
     "dist"
   ],
-  "types": "./dist/index.d.ts",
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
